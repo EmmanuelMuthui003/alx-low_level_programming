@@ -9,11 +9,11 @@
 
 void more_numbers(void)
 {
-	int j, k;
+	int rows, columns;
 
-	for (j = '0'; j <= '14'; j++)
+	for (rows = 0; rows <= 10; rows++)
 	{
-		for (k = '0'; k <= '10'; k++)
+		for (columns = 0; columns <= 14; columns++)
 		{
 			_putchar(columns);
 		}
