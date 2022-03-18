@@ -9,18 +9,16 @@
 
 void more_numbers(void)
 {
-	int rows, columns;
+	int num, count;
 
-	for (rows = 0; rows <= 10; rows++)
+	for (count = 0; count <= 10; count++)
 	{
-		for (columns = 0; columns <= 14; columns++)
+		for (num = 0; num <= 14; num++)
 		{
-			if (columns > 9)
-				_putchar((columns / 10) + '0');
-			_putchar((columns % 10) + '0');
+			if (num > 9)
+				_putchar((num / 10) + '0');
+			_putchar((num % 10) + '0');
 		}
 		_putchar('\n');
 	}
 }
-
-
