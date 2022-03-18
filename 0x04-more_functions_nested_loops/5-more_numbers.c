@@ -15,7 +15,9 @@ void more_numbers(void)
 	{
 		for (columns = 0; columns <= 14; columns++)
 		{
-			_putchar(columns);
+			if (columns > 9)
+				_putchar((columns / 10) + '0');
+				_putchar((columns % 10) + '0');
 		}
 		_putchar('\n');
 	}
