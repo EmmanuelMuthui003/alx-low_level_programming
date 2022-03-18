@@ -2,10 +2,11 @@
 
 /**
  * print_line - function that draws a straight line in the terminal
+ * followed by a new line.
  *
  * @n: number of times the character _ should be printed
  *
- * Return: void
+ * Return: Always 0
  */
 
 void print_line(int n)
@@ -14,7 +15,7 @@ void print_line(int n)
 
 	if (i > 0)
 	{
-		for (i = 0; i < n; i++)
+		for (; i < n; i++)
 			_putchar('_');
 	}
 	_putchar('\n');
